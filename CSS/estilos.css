@@ -1,0 +1,323 @@
+/* Estilos para la página completa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #12171E;
+    font-family: "Lucida Bright", Georgia, serif;
+}
+
+  /* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00FFD1;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+  /* Estilos para el menú de navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #0096FF;
+}
+
+  /* Estilos para el destacado de la página */
+.destacado {
+    background-image: url(../IMG/Pikmin\ 4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 500px;
+}
+
+.titulo-destacado {
+    color: #12171E;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.texto-destacado {
+    color: #12171E;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.boton-destacado {
+    background-color: #12171E;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-destacado:hover {
+    background-color: #116A7B;
+    color: #fff;
+}
+
+  /* Estilos para el contenedor principal */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    color: #fff;
+}
+
+  /* Estilos para las noticias recientes */
+.noticias-recientes {
+    background-color: #F6F6F6;
+    padding: 50px 20px;
+}
+
+.titulo-noticia {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.contenedor-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+  /* Estilos para una noticia individual */
+.noticia {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.noticia:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-noticia {
+    margin: 0 20px 20px;
+    font-size: 1rem;
+}
+
+.boton-noticia {
+    background-color: #12171E;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    text-decoration: none;
+}
+
+.boton-noticia:hover {
+    background-color: #116A7B;
+}
+
+.boton-noticia:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(18, 23, 30, 0.3);
+}
+
+  /* Estilos para la vista previa de la noticia */
+.noticia-preview {
+    display: flex;
+    flex-direction: row;
+    background-color: #181A1B;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.noticia-preview:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.imagen-noticia {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.titulo-noticia {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    overflow: hidden;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.titulo-noticia:hover {
+    color: #116A7B;
+}
+
+.texto-preview {
+    max-width: 70%;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+.texto-preview p {
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.leer-mas {
+    align-self: flex-end;
+}
+
+.noticia-preview:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #12171E;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* Contenedor para el logo y los enlaces */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.logo-footer img {
+    width: 150px;
+    height: auto;
+}
+
+  /* Enlaces del pie de página */
+.enlaces ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlaces a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    display: block;
+    padding: 10px;
+}
+
+  /* Redes sociales */
+.redes-sociales {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.iconos a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+  /* Derechos de autor */
+.derechos {
+    background-color: #1C2431;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.derechos p {
+    margin: 0;
+    font-size: 0.8rem;
+}
