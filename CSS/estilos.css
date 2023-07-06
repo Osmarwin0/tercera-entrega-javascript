@@ -66,26 +66,7 @@ nav ul li a:hover {
 }
 
 /* Estilos para el destacado de la página */
-.destacado {
-    background-image: url(../IMG/Pikmin\ 4.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    height: 500px;
-}
 
-.titulo-destacado {
-    color: #12171E;
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.texto-destacado {
-    color: #12171E;
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-}
 
 .texto-delineado{
     color: white;
@@ -316,6 +297,7 @@ footer {
   /* Redes sociales */
 .redes-sociales {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     margin-left: 50px;
@@ -340,4 +322,23 @@ footer {
 .derechos p {
     margin: 0;
     font-size: 0.8rem;
+}
+
+/* Media Queries*/
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .nav.flex-column.flex-sm-row {
+    flex-direction: row;
+    }
+    .nav.flex-column.flex-sm-row .nav-item {
+    margin-right: 15px;
+    }
+}
+@media (max-width: 575.98px) {
+    .nav.flex-column.flex-sm-row {
+    flex-direction: column;
+    }
+    .nav.flex-column.flex-sm-row .nav-item {
+    margin-bottom: 10px;
+    }
 }
