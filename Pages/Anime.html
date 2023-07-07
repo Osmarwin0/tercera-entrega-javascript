@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheGeeknd</title>
 
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
     <!-- Hoja de estilo y favicon -->
     <link rel="stylesheet" href="../CSS/estilos.css">
     <link rel="shortcut icon" href="../IMG/Navicon 70x70.png">
@@ -16,81 +20,100 @@
         <a href="../index.html" class="logo">
             <img src="../IMG/TheGeeknd.png" alt="Logo de la página">
         </a>
-        <nav>
-      <!-- Menú de navegación -->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./Noticias.html">Noticias</a></li>
-                <li><a href="./Videojuegos.html">Videojuegos</a></li>
-                <li><a href="./Cine.html">Cine</a></li>
-                <li><a href="./Anime.html">Anime</a></li>
+        <!-- Menú de navegación-->
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="./Pages/Noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="./Pages/Videojuegos.html">Videojuegos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="./Pages/Cine.html">Cine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="./Pages/Anime.html">Anime</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
+    
+<!-- Contenido principal -->
+<main>
+  <h2 class="sub-titulo">Anime</h2>
 
-        <!-- Contenido principal -->
-        <h2 class="sub-titulo">Anime</h2>
-
-        <!-- Primera noticia de Anime -->
-        <article class="noticia-preview">
-            <img class="imagen-noticia" src="../IMG/Bocchi The Rock.png" alt="Bocchi The Rock">
-            <div class="noticias">
-              <h3 class="titulo-noticia">Bocchi the Rock! tendrá una película en 2024</h3>
-              <div class="texto-preview">
-                <p>La Kessoku Band regresa en 2024 con la película de Bocchi the Rock!</p>
-                <a href="#" class="leer-mas">Leer más</a>
+  <div class="container">
+      <div class="row">
+          <!-- Primera noticia de Anime -->
+          <article class="noticia-preview col-12 col-md-6 flex-column">
+              <img class="imagen-noticia" src="../IMG/Bocchi The Rock.png" alt="Bocchi The Rock">
+              <div class="noticias h-100 d-flex flex-column">
+                  <h3 class="titulo-noticia">Bocchi the Rock! tendrá una película en 2024</h3>
+                  <div class="texto-preview">
+                      <p class="ellipsis">La Kessoku Band regresa en 2024 con la película de Bocchi the Rock!</p>
+                      <a href="#" class="leer-mas">Leer más</a>
+                  </div>
               </div>
-            </div>
           </article>
 
           <!-- Segunda noticia de Anime -->
-          <article class="noticia-preview">
+          <article class="noticia-preview col-12 col-md-6 flex-column">
               <img class="imagen-noticia" src="../IMG/Panico hecho de metal.png" alt="Full Metal Panic">
-              <div class="noticias">
-                <h2 class="titulo-noticia">Full Metal Panic! celebrará sus 20 años con una nueva secuela.</h2>
-                <div class="texto-preview">
-                  <p>Una nueva historia de Full Metal Panic! está en desarrollo.</p>
-                </div>
-                <a href="#" class="leer-mas">Leer más</a>
+              <div class="noticias h-100 d-flex flex-column">
+                  <h2 class="titulo-noticia">Full Metal Panic! celebrará sus 20 años con una nueva secuela.</h2>
+                  <div class="texto-preview">
+                      <p class="ellipsis">Una nueva historia de Full Metal Panic! está en desarrollo.</p>
+                  </div>
+                  <a href="#" class="leer-mas">Leer más</a>
               </div>
-            </article>
+          </article>
 
-            <!-- Tercera noticia de Anime -->
-            <article class="noticia-preview">
+          <!-- Tercera noticia de Anime -->
+          <article class="noticia-preview col-12 col-md-6 flex-column">
               <img class="imagen-noticia" src="../IMG/Una pieza.png" alt="One Piece">
-              <div class="noticias">
-                <h2 class="titulo-noticia">ONE PIECE DAY ’23: Conoce los detalles de este evento exclusivo para fans</h2>
-                <div class="texto-preview">
-                  <p>Aquí te dejamos todos los datos para que te registres en el evento más grande de One Piece.</p>
-                </div>
-                <a href="#" class="leer-mas">Leer más</a>
+              <div class="noticias h-100 d-flex flex-column">
+                  <h2 class="titulo-noticia">ONE PIECE DAY ’23: Conoce los detalles de este evento exclusivo para fans</h2>
+                  <div class="texto-preview">
+                      <p class="ellipsis">Aquí te dejamos todos los datos para que te registres en el evento más grande de One Piece.</p>
+                  </div>
+                  <a href="#" class="leer-mas">Leer más</a>
               </div>
-            </article>
+          </article>
 
-            <!-- Cuarta noticia de Anime -->
-            <article class="noticia-preview">
+          <!-- Cuarta noticia de Anime -->
+          <article class="noticia-preview col-12 col-md-6 flex-column">
               <img class="imagen-noticia" src="../IMG/Pikachu abraza.png" alt="Pikachu abrazando a Ash">
-              <div class="noticias">
-                <h2 class="titulo-noticia">La tercera parte de Pokémon Ultimate Journeys: The Series llegará a Netflix en Junio...</h2>
-                <div class="texto-preview">
-                  <p>La tercera parte de la última temporada de las aventuras de Ash y Pikachu llegará a Netflix muy pronto...</p>
-                </div>
-                <a href="#" class="leer-mas">Leer más</a>
+              <div class="noticias h-100 d-flex flex-column">
+                  <h2 class="titulo-noticia">La tercera parte de Pokémon Ultimate Journeys: The Series llegará a Netflix en Junio...</h2>
+                  <div class="texto-preview">
+                      <p class="ellipsis">La tercera parte de la última temporada de las aventuras de Ash y Pikachu llegará a Netflix muy pronto...</p>
+                  </div>
+                  <a href="#" class="leer-mas">Leer más</a>
               </div>
-            </article>
+          </article>
 
-            <!-- Quinta noticia de Anime -->
-            <article class="noticia-preview">
+          <!-- Quinta noticia de Anime -->
+          <article class="noticia-preview col-12 col-md-6 flex-column">
               <img class="imagen-noticia" src="../IMG/Dinero.png" alt="Dinero Anime">
-              <div class="noticias">
-                <h2 class="titulo-noticia">La piratería de manga y anime ha generado pérdidas por 15,000 mdd</h2>
-                <div class="texto-preview">
-                  <p>Durante años, la industria ha trabajado para cortar el crecimiento de la piratería en anime, pero la batalla acaba de...</p>
-                </div>
-                <a href="#" class="leer-mas">Leer más</a>
+              <div class="noticias h-100 d-flex flex-column">
+                  <h2 class="titulo-noticia">La piratería de manga y anime ha generado pérdidas por 15,000 mdd</h2>
+                  <div class="texto-preview">
+                      <p class="ellipsis">Durante años, la industria ha trabajado para cortar el crecimiento de la piratería en anime, pero la batalla acaba de...</p>
+                  </div>
+                  <a href="#" class="leer-mas">Leer más</a>
               </div>
-            </article>
+          </article>
     </main>
 
     <!-- Pie de página -->

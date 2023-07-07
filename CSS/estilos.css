@@ -175,6 +175,13 @@ nav ul li a:hover {
     box-shadow: 0 0 0 3px rgba(18, 23, 30, 0.3);
 }
 
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
   /* Estilos para la vista previa de la noticia */
 .noticia-preview {
     display: flex;
