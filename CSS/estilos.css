@@ -181,6 +181,14 @@ nav ul li a:hover {
     text-overflow: ellipsis;
 }
 
+.news-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
 
   /* Estilos para la vista previa de la noticia */
 .noticia-preview {
