@@ -1,0 +1,32 @@
+/* Estilos para el menú de navegación */
+nav {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+            margin-left: 20px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            a {
+                color: map-get($map: $colores, $key: blanco );
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 18px;
+                padding: 10px 15px;
+                border-radius: 10px;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: map-get($map: $colores, $key: blanco);
+                    color: map-get($map: $colores, $key: celeste);
+                }
+            }
+        }
+    }
+}

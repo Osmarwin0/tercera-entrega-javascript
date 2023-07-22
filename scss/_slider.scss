@@ -1,0 +1,39 @@
+/* Slider */
+.carousel-item .img-container {
+    position: relative;
+    height: 80vh;
+    @extend %centrar-flex;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: $full-height;
+    width: $full-width;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.boton-destacado {
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #8a2be2, #9400d3);
+    border: none;
+    border-radius: 20px;
+    color: map-get($map: $colores, $key: blanco);
+    text-decoration: none;
+}
+
+.boton-destacado2 {
+    @extend %centrar-flex;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #8a2be2, #9400d3);
+    border: none;
+    border-radius: 20px;
+    color: map-get($map: $colores, $key: blanco);
+    text-decoration: none;
+}

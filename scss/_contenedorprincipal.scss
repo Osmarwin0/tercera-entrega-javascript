@@ -1,0 +1,8 @@
+/* Estilos para el contenedor principal */
+.contenedor {
+    @include centrar-flex;
+    flex-direction: column;
+    height: $full-height;
+    padding: 0 20px;
+    color: map-get($map: $colores, $key: blanco);
+}

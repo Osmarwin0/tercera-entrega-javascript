@@ -1,0 +1,15 @@
+/* Estilos para las noticias recientes */
+.noticias-recientes {
+    background-color: map-get($map: $colores, $key: blanco);
+    padding: 50px 20px;
+}
+
+.titulo-noticia {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.contenedor-noticias {
+    @include centrar-flex;
+    gap: 20px;
+}

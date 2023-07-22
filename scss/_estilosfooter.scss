@@ -1,0 +1,81 @@
+/* Estilos para el pie de página */
+footer {
+    background-color: map-get($map: $colores, $key: negro);
+    color: map-get($map: $colores, $key: blanco);
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Enlaces del pie de página */
+.enlaces ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include centrar-flex;
+
+    a {
+        color: map-get($map: $colores, $key: blanco);
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin: 0 10px;
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* Contenedor para el logo y los enlaces */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: $full-width;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 50px;
+
+    img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+/* Redes sociales */
+.redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.iconos a {
+    color: map-get($map: $colores, $key: blanco);
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+/* Derechos de autor */
+.derechos {
+    background-color: map-get($map: $colores, $key: color-derechos);
+    text-align: center;
+    padding: 10px 0;
+    width: $full-width;
+
+    p {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+}

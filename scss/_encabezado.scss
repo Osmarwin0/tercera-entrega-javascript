@@ -1,0 +1,12 @@
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: map-get($map: $colores, $key: color-nav);
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 90px;
+}
