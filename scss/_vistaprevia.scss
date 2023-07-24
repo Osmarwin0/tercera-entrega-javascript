@@ -11,8 +11,7 @@
 .noticia-preview {
     display: flex;
     flex-direction: row;
-    background: rgb(28, 84, 31);
-    background: radial-gradient(circle, rgb(48, 100, 52) 0%, rgb(68, 67, 67) 100%);
+    background-color: map-get($map: $colores, $key: color-contenedor-noticias);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 20px;

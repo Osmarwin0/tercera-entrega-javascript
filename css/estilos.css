@@ -14,8 +14,8 @@
 }
 
 body {
-  background-color: #a4508b;
-  background-image: linear-gradient(326deg, #743560 0%, #4a056f 74%);
+  background: rgb(29, 45, 34);
+  background: linear-gradient(343deg, rgb(29, 45, 34) 0%, rgb(85, 123, 86) 100%);
   font-family: "Lucida Bright", Georgia, serif;
 }
 
@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3ead31;
+  background-color: #9dbfdb;
   padding: 10px 20px;
 }
 
@@ -213,8 +213,7 @@ nav ul li a:hover {
 .noticia-preview {
   display: flex;
   flex-direction: row;
-  background: rgb(28, 84, 31);
-  background: radial-gradient(circle, rgb(48, 100, 52) 0%, rgb(68, 67, 67) 100%);
+  background-color: #5dffc4;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 20px;
