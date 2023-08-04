@@ -15,6 +15,7 @@ footer {
     margin: 0;
     padding: 0;
     @include centrar-flex;
+    flex-wrap: wrap;
 
     a {
         color: map-get($map: $colores, $key: blanco);
@@ -29,7 +30,7 @@ footer {
 /* Contenedor para el logo y los enlaces */
 .contenedor {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -39,6 +40,7 @@ footer {
 
 .logo-footer {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 10px;
     margin-right: 50px;
@@ -52,8 +54,7 @@ footer {
 /* Redes sociales */
 .redes-sociales {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin-left: 50px;
     margin-bottom: 20px;

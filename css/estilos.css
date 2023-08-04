@@ -30,6 +30,7 @@ header {
 
 .logo img {
   height: 90px;
+  width: 100%;
 }
 
 /* Slider */
@@ -100,7 +101,6 @@ nav ul li a:hover {
 /* Bootstrap*/
 .navbar-nav .nav-link {
   color: #fff;
-  text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black;
 }
 
 /* Estilos para el destacado de la página */
@@ -213,8 +213,7 @@ nav ul li a:hover {
 .noticia-preview {
   display: flex;
   flex-direction: row;
-  background-color: #5dffc4;
-  border-radius: 10px;
+  background-color: #5dffc4 !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin-bottom: 20px;
@@ -294,6 +293,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .enlaces ul a {
   color: #fff;
@@ -307,7 +307,7 @@ footer {
 /* Contenedor para el logo y los enlaces */
 .contenedor {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -317,6 +317,7 @@ footer {
 
 .logo-footer {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 10px;
   margin-right: 50px;
@@ -329,8 +330,7 @@ footer {
 /* Redes sociales */
 .redes-sociales {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   margin-left: 50px;
   margin-bottom: 20px;
@@ -371,6 +371,16 @@ footer {
   }
   .nav.flex-column.flex-sm-row .nav-item {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 479.98px) {
+  .nav.flex-column.flex-sm-row .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .enlaces ul {
+    display: flex;
+    flex-direction: column;
   }
 }
 

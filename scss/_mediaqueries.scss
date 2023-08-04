@@ -16,3 +16,14 @@
     margin-bottom: 10px;
     }
 }
+
+@media (max-width: 479.98px) {
+    .nav.flex-column.flex-sm-row .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+    .enlaces ul {
+    display: flex;
+    flex-direction: column;
+    }
+}

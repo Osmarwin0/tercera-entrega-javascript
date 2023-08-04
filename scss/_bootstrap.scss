@@ -1,9 +1,4 @@
 /* Bootstrap*/
 .navbar-nav .nav-link {
     color: map-get($map: $colores, $key: blanco);
-    text-shadow:
-    -0.5px -0.5px 0 black,
-    0.5px -0.5px 0 black,
-    -0.5px 0.5px 0 black,
-    0.5px 0.5px 0 black;
 }
