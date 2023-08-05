@@ -231,6 +231,7 @@ nav ul li a:hover {
   width: 150px;
   height: 150px;
   margin-right: 20px;
+  border-radius: 10px;
 }
 
 .noticias {
@@ -272,6 +273,61 @@ nav ul li a:hover {
   border-radius: 20px;
   color: #fff;
   text-decoration: none;
+}
+
+/* Estilos para Contacto*/
+.contacto {
+  display: flex;
+  flex-direction: row;
+  background-color: #5dffc4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.contacto h2 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.contacto p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.contacto a {
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: none;
+}
+.contacto a:hover {
+  text-decoration: none;
+}
+.contacto strong {
+  font-weight: bold;
+}
+.contacto .correo {
+  color: #479bf4;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.contacto .correo:hover {
+  color: #000000;
+}
+.contacto .mapa {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.equipo img {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
 /* Estilos para el pie de página */
@@ -381,6 +437,22 @@ footer {
   .enlaces ul {
     display: flex;
     flex-direction: column;
+  }
+  .contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mapa {
+    margin-top: 5px;
+  }
+  .correo {
+    text-align: center;
+  }
+  .equipo img {
+    margin-bottom: 10px;
+  }
+  .redaccion {
+    text-align: center;
   }
 }
 
