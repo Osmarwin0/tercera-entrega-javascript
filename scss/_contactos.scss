@@ -2,12 +2,11 @@
 .contacto {
     display: flex;
     flex-direction: row;
-    background-color: #5dffc4;
+    background-color: #463940;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin-bottom: 20px;
-    margin-left: 30px;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     border-radius: 15px;
 
@@ -44,7 +43,7 @@
         cursor: pointer;
     
         &:hover {
-        color: #000000;
+        color: #9837ff;
         }
     }
     .mapa {

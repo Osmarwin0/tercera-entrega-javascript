@@ -14,8 +14,7 @@
 }
 
 body {
-  background: rgb(29, 45, 34);
-  background: linear-gradient(343deg, rgb(29, 45, 34) 0%, rgb(85, 123, 86) 100%);
+  background-image: linear-gradient(160deg, #859398 0%, #283048 100%);
   font-family: "Lucida Bright", Georgia, serif;
 }
 
@@ -24,13 +23,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #9dbfdb;
-  padding: 10px 20px;
+  background-color: #6717bb;
+  padding: 5px 20px;
 }
 
 .logo img {
-  height: 90px;
+  height: 70px;
   width: 100%;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 /* Slider */
@@ -179,7 +183,7 @@ nav ul li a:hover {
   text-decoration: none;
 }
 .boton-noticia:hover {
-  background-color: #116A7B;
+  background-color: #9837ff;
 }
 .boton-noticia:focus {
   outline: none;
@@ -213,18 +217,19 @@ nav ul li a:hover {
 .noticia-preview {
   display: flex;
   flex-direction: row;
-  background-color: #5dffc4 !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin-bottom: 20px;
-  width: 90%;
+  width: 100%;
   overflow: hidden;
   border-radius: 15px;
+  background-color: #463940;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .noticia-preview:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
+  cursor: pointer;
 }
 
 .imagen-noticia {
@@ -249,7 +254,7 @@ nav ul li a:hover {
   transition: color 0.3s ease;
 }
 .titulo-noticia:hover {
-  color: #116A7B;
+  color: #9837ff;
 }
 
 .texto-preview {
@@ -279,12 +284,11 @@ nav ul li a:hover {
 .contacto {
   display: flex;
   flex-direction: row;
-  background-color: #5dffc4;
+  background-color: #463940;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin-bottom: 20px;
-  margin-left: 30px;
-  width: 90%;
+  width: 100%;
   overflow: hidden;
   border-radius: 15px;
 }
@@ -316,7 +320,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 .contacto .correo:hover {
-  color: #000000;
+  color: #9837ff;
 }
 .contacto .mapa {
   display: flex;
@@ -332,9 +336,9 @@ nav ul li a:hover {
 
 /* Estilos para el pie de página */
 footer {
-  background-color: #12171E;
+  background-color: #471e72;
   color: #fff;
-  padding: 50px 0;
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -357,7 +361,11 @@ footer {
   font-size: 1.2rem;
   margin: 0 10px;
   display: block;
-  padding: 10px;
+  padding: 5px;
+}
+.enlaces ul a:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 /* Contenedor para el logo y los enlaces */
@@ -375,7 +383,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-right: 50px;
 }
 .logo-footer img {
@@ -389,7 +397,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin-left: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .iconos a {
@@ -402,9 +410,9 @@ footer {
 
 /* Derechos de autor */
 .derechos {
-  background-color: #1C2431;
+  background-color: #471e72;
   text-align: center;
-  padding: 10px 0;
+  padding: 2px 0;
   width: 100%;
 }
 .derechos p {
