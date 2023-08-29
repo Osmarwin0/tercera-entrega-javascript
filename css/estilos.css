@@ -334,6 +334,12 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
+.texto-nosotros {
+  font-size: 1rem;
+  text-align: justify;
+  margin-left: 15px;
+}
+
 /* Estilos para el pie de página */
 footer {
   background-color: #471e72;
