@@ -24,7 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #6717bb;
-  padding: 5px 20px;
+  padding: 5px 5px;
 }
 
 .logo img {
@@ -105,6 +105,10 @@ nav ul li a:hover {
 /* Bootstrap*/
 .navbar-nav .nav-link {
   color: #fff;
+}
+
+.card {
+  text-align: center;
 }
 
 /* Estilos para el destacado de la página */
@@ -335,7 +339,7 @@ nav ul li a:hover {
 }
 
 .texto-nosotros {
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-align: justify;
   margin-left: 15px;
 }
