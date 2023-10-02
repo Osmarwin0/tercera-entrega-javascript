@@ -125,7 +125,7 @@ const comprarRopaYAccesorios = () => {
         { nombre: "Pijamas con estampados de personajes.", precio: 25, categoría: "Ropa" },
     ];
     const accesorios = [
-        { nombre: "Gorras con logos de superhéroes.", precio: 20, categoría: "Accesorios" },
+        { nombre: "Gorras con logos de superhéroes", precio: 20, categoría: "Accesorios" },
         { nombre: "Gorros de lana con símbolos de superhéroes.", precio: 25, categoría: "Accesorios" },
         { nombre: "Bolsos con estampados de personajes.", precio: 20, categoría: "Accesorios" },
         { nombre: "Bufandas con motivos de películas de fantasía.", precio: 25, categoría: "Accesorios" },
