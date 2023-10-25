@@ -1,56 +1,52 @@
 const btnComics = document.querySelector('#btn-comics');
+btnComics.addEventListener("click", () => {
+    const categoria = btnComics.getAttribute("data-categoria");
+    tienda(categoria);
+});
+
 const btnFiguras = document.querySelector('#btn-figuras');
+btnFiguras.addEventListener("click", () => {
+    const categoria = btnFiguras.getAttribute("data-categoria");
+    tienda(categoria);
+});
+
 const btnRopa = document.querySelector('#btn-ropa');
-
-// Agregar un evento de clic a cada botón
-btnComics.addEventListener('click', () => {
-    const listaComics = document.querySelector("#lista-comics");
-
-    if (listaComics.style.display === "none") {
-        listaComics.style.display = "block";
-        tienda(); // Llama a la función tienda()
-    } else {
-        listaComics.style.display = "none";
-    }
+btnRopa.addEventListener("click", () => {
+    const categoria = btnRopa.getAttribute("data-categoria");
+    tienda(categoria);
 });
 
-btnFiguras.addEventListener('click', () => {
-    const listaFiguras = document.querySelector("#lista-figuras");
-
-    if (listaFiguras.style.display === "none") {
-        listaFiguras.style.display = "block";
-        tienda(); // Llama a la función tienda()
-    } else {
-        listaFiguras.style.display = "none";
-    }
-});
-
-btnRopa.addEventListener('click', () => {
-    const listaRopa = document.querySelector("#lista-ropa");
-
-    if (listaRopa.style.display === "none") {
-        listaRopa.style.display = "block";
-        comprarRopaYAccesorios(); // Llama a la función comprarRopaYAccesorios()
-    } else {
-        listaRopa.style.display = "none";
-    }
-});
-
-const tienda = () => {
-    alert('Bienvenido a nuestra tienda. Dinos qué te interesa comprar:\n1. Cómics\n2. Figuras de Acción\n3. Ropa y Accesorios\n4. Salir');
+const tienda = (categoria) => {
+    const opcion = prompt(`Bienvenido a nuestra tienda. Dinos qué te interesa comprar:\n1. Comprar Comics\n2. Comprar Figuras de Acción\n3. Comprar Ropa y Accesorios\n4. Salir`);
 
     switch (opcion) {
-        case 1:
+        case "1":
+            comprar(categoria);
+            break;
+        case "2":
+            comprar(categoria);
+            break;
+        case "3":
+            comprar(categoria);
+            break;
+        case "4":
+            alert('Gracias por visitar nuestra tienda.');
+            break;
+        default:
+            alert('Gracias por visitar nuestra tienda.');
+    }
+}
+
+const comprar = (categoria) => {
+    switch (categoria) {
+        case "Cómics":
             comprarComicsMangasLibros();
             break;
-        case 2:
+        case "Figuras de Acción":
             comprarFigurasDeAccion();
             break;
-        case 3:
+        case "Ropa y Accesorios":
             comprarRopaYAccesorios();
-            break;
-        case 4:
-            alert('Gracias por visitar nuestra tienda.');
             break;
         default:
             alert('Gracias por visitar nuestra tienda.');
